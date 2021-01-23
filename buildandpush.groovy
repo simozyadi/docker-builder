@@ -9,7 +9,7 @@ pipeline {
 				script{
 				
 					sh 'docker build -t lab/$BRANCH_NAME:$BUILD_NUMBER .'
-					sh 'docker push lab/$BRANCH_NAME:$BUILD_NUMBER
+					sh 'docker push lab/$BRANCH_NAME:$BUILD_NUMBER'
 				
 					}
 				}
